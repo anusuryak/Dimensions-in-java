@@ -1,1 +1,65 @@
+package Dimensions;
+import java.util.*;
+public class TwoDimensional {
+   public static void main(String[]args) {
+	   int a[][]=new int [10][10];
+	   int b[][]=new int [10][10];
+	   int c1[][]=new int[10][10];
+	   
+	   int Row,Cols;
+	   int r,c ;
+	   
+	   Scanner sc=new Scanner(System.in);
+	   System.out.println("Enter the row value:");
+	   Row=sc.nextInt();
+	   
+	   System.out.println("Enter the col value:");
+	   Cols=sc.nextInt();
+	   
+	   for(r=0;r<Row;r++) {
+		   for(c=0;c<Cols;c++) {
+			   System.out.println("Enter the A Array value["+r+"]["+c+"]:");
+			   a[r][c]=sc.nextInt();
+		   }
+	   }
+		for(r=0;r<Row;r++) {
+			for(c=0;c<Cols;c++) {
+				
+				System.out.println("Enter the B Array value["+r+"]["+c+"]:");
+				b[r][c]=sc.nextInt();
+			}
+	   }
+		for(r=0;r<Row;r++) {
+			for(c=0;c<Cols;c++) {
+	            c1[r][c]=a[r][c]+b[r][c];
+			}
+		}
+	   
+	for(r=0;r<Row;r++) {
+		for(c=0;c<Cols;c++) {
+			System.out.print(a[r][c]+"\t");
+			
+		}
+		System.out.println();
+	}
+	
+	
+	for(r=0;r<Row;r++) {
+		for(c=0;c<Cols;c++) {
+			System.out.print(b[r][c]+"\t");
+		}
+		System.out.println();
+	}
+	
+
+	for(r=0;r<Row;r++) {
+		for(c=0;c<Cols;c++) {
+			System.out.print(c1[r][c]+"\t");
+		}
+		System.out.println();
+	}
+	
+   }
+}
+
 
